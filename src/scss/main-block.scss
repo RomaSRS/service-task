@@ -1,0 +1,155 @@
+.menu {
+  display: flex;
+  overflow-x: scroll;
+  list-style: none;
+
+  @media (min-width: 1440px) {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+}
+
+.menu__navigation {
+  padding: 0;
+  margin: 0 16px;
+}
+
+.menu__menu-item {
+  flex-shrink: 0;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  color: #7E7E82;
+  padding: 8px 16px;
+  margin: 0;
+  border: 2px solid transparent;
+  border-radius: 6px;
+}
+
+.menu__menu-item:hover {
+  border-color: #BDFFEC;
+  color: inherit;
+  background: #FFF;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-block__section-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  @media (min-width: 768px) {
+    margin-top: 32px;
+  }
+}
+
+.article {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+.article__article-wrapper {
+  margin: 24px 16px 16px;
+  max-height: 90px;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    max-height: 142px;
+    max-width: 312px;
+    margin: 0 24px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 490px;
+    max-height: 160px;
+  }
+}
+
+.article__paragraph {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.card__btn {
+  font-family: "TT Lakes", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  min-height: 24px;
+  padding: 4px 4px 4px 30px;
+  position: relative;
+  margin: 10px 0 0 16px;
+  outline: none;
+  display: inline-block;
+  background-color: #FFFFFF00;
+  border: 2px solid #41F6D700;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.card__btn::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  left: 4px;
+  background: url(../img/expand.svg) 50% no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+
+.card__btn:hover::before {
+  transform: rotate(360deg) scale(1.5);
+}
+
+.card__btn:hover {
+  background-color: #FFFFFF;
+  border: 2px solid #41F6D7;
+}
+
+.card__btn:focus {
+  border: 2px solid #41F6D7;
+}
+
+.card__btn:active {
+  background-color: #EEEEEE;
+  border: 2px solid #41F6D7;
+}
+
+.main-block__image-wrapper {
+  flex: 1 0 320px;
+
+  @media (min-width: 768px) {
+    flex-basis: 360px;
+    margin: 0 24px;
+  }
+}
+
+.main-block__image {
+  width: 100%;
+  margin: 5% 0;
+
+  @media (min-width: 768px) {
+    border-radius: 6px;
+    margin: 0;
+  }
+}
+
+.link-button__text {
+  margin-right: 40px;
+  padding-left: 5px;
+}
+
+@media (min-width: 768px) {
+  .article__button {
+    margin: 10px 60px;
+  }
+}
+

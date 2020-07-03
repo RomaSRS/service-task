@@ -2,12 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="./img/logo.svg"/>
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Services Software</title>
 </head>
-<body>
-
+<body class="page page__size">
+  <header class="header__content" >
+    <nav class="nav nav__nav-content_size">
+      <button class="link-btn nav-btn__burger link-btn_size" href="#" title="Меню">Menu</button>
+      <div  class="nav__separation"></div>
+      <a class="nav-content__logo" href="#"><img src="./img/logo.svg" alt="CPS Ремонт техники Dell"></a>
+      <button class="link-btn nav-btn__request-call link-btn_size" href="#" title="Заказать звонок">Заказать звонок</button>
+      <button class="link-btn nav-btn__feedback link-btn_size" href="#" title="Обратная связь">Обратная связь</button>
+      <button class="link-btn nav-btn__profile link-btn_size" href="#" title="Профиль">Профиль</button>
+      <div  class="nav__separation"></div>
+      <button class="link-btn nav-btn__repair link-btn_size" href="#" title="Оставить заявку">
+        <span class="link-btn__text">Оставить заявку</span>
+      </button>
+      <button class="link-btn nav-btn__check-status link-btn_size" href="#" title="Статус ремонта">
+        <span class="link-btn__text">Статус ремонта</span>
+      </button>
+    </nav>
+    <h1 class="header-content__title">Услуги и сервисы</h1>
+  </header>
+  <main class="main-block">
+    <ul class="menu menu__navigation">
+      <li class="menu__menu-item" href="#""><a class="menu-link" href="#">Ремонтируемые бренды</a></li>
+      <li class="menu__menu-item" href="#"><a class="menu-link" href="#">Ремонтируемые устройства</a></li>
+      <li class="menu__menu-item" href="#"><a class="menu-link" href="#">Цены на услуги</a></li>
+      <li class="menu__menu-item" href="#"><a class="menu-link" href="#">Адреса сервисных центров</a></li>
+      <li class="menu__menu-item" href="#"><a class="menu-link" href="#">Специальные цены</a></li>
+      <li class="menu__menu-item" href="#"><a class="menu-link" href="#">Отзывы</a></li>
+    </ul>
+    <section class="main-block__section-flex">
+      <article class="article">
+        <div class="article__article-wrapper">
+          <p class="article__paragraph">Мы являемся авторизированным сервисным центром по ремонту бытовой техники Dell.
+            Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+          </p>
+          <p class="article__paragraph">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера.
+            Мы гордимся тем, что к нам обращаются по рекомендациям, и в свою очередь советуют нас родным и близким.
+          </p>
+        </div>
+        <button class="card__btn">Читать далее</button>
+      </article>
+      <div class="main-block__image-wrapper">
+        <img class="main-block__image" src="./img/background.jpg" alt="CPS 3D logo">
+      </div>
+    </section>
+  </main>
 </body>
 </html>

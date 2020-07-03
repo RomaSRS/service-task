@@ -1,0 +1,19 @@
+.page {
+  padding: 0;
+  margin: auto;
+  font-family: 'TT Lakes', sans-sefir;
+  background-color: #F8F8F8;
+  color: #1B1C21;
+
+  @media (min-width: 768px) {
+    min-width: 768px;
+  }
+
+  @media (min-width: 1436px) {
+    max-width: 1440px;
+  }
+
+  &__size {
+    min-width: 320px;
+  }
+}
