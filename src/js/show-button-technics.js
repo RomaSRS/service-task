@@ -1,10 +1,10 @@
 
 'use strict';
 
-export function showContent() {
+export function showContentTechnics() {
 
-  let btn = document.querySelector('.expand-btn');
-  let frame = document.querySelector('.slide');
+  let btn = document.querySelector('.expand-btn--technics');
+  let frame = document.querySelector('.slide--technics');
 
   btn.addEventListener('click', switchVisibility);
   btn.addEventListener('keydown', keyDetect);

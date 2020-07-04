@@ -2,9 +2,9 @@
 
   import Swiper from 'swiper';
 
-  export const swiperBrands = function() {
+  export const swiperTechnics = function() {
 
-    const newSwiper = document.querySelector('.swiper-container');
+    const newSwiper = document.querySelector('.swiper-container--technics');
 
   (function() {
     const breakpoint = window.matchMedia( '(min-width:768px)' );

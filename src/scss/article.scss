@@ -46,6 +46,10 @@
   }
 }
 
+.shown-block {
+  max-height: none;
+}
+
 .swiper {
   width: 240px;
   height: 72px;
@@ -127,7 +131,7 @@
   min-height: 24px;
   padding: 4px 12px 4px 30px;
   position: relative;
-  margin: 24px 0 0 32px;
+  margin: 24px 0 32px 32px;
   outline: none;
   display: inline-block;
   background-color: #FFFFFF00;
@@ -137,7 +141,7 @@
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
 
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
@@ -145,6 +149,7 @@
 .expand-btn::before {
   content: "";
   position: absolute;
+  display: inline-block;
   width: 24px;
   height: 24px;
   top: 4px;
@@ -170,7 +175,6 @@
   background-color: #EEEEEE;
   border: 2px solid #41F6D7;
 }
-
 
 @media (min-width: 768px) {
 

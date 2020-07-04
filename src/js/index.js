@@ -1,9 +1,18 @@
 import '../scss/style.scss';
 
 
-import {SwiperBrands} from './swiper-brands';
+import {swiperBrands} from './swiper-brands';
+import {swiperTechnics} from './swiper-technics';
+
+import {showContentText} from './show-button-text';
 import {showContent} from './show-button';
+import {showContentTechnics} from './show-button-technics';
 
 
-SwiperBrands();
+
+
+swiperBrands();
+swiperTechnics();
+showContentText();
 showContent();
+showContentTechnics();
