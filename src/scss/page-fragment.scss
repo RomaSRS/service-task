@@ -1,0 +1,27 @@
+.page__fragment {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin: 16px;
+  max-width: 420px;
+}
+
+.page__link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  display: inline-block;
+  margin: 0;
+  margin-left: 16px;
+  transition: 0.3s;
+
+  &::after {
+    content: url(../img/line.svg);
+    position: relative;
+    left: 8px;
+    top: 2px;
+    transition: 0.3s;
+  }
+}

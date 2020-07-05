@@ -3,12 +3,11 @@
 
 export function showContentTechnics() {
 
-  let btn = document.querySelector('.expand-btn--technics');
-  let frame = document.querySelector('.slide--technics');
+  const btn = document.querySelector('.expand-btn--technics');
+  const frame = document.querySelector('.slide--technics');
 
   btn.addEventListener('click', switchVisibility);
   btn.addEventListener('keydown', keyDetect);
-  btn.addEventListener('touchstart', switchVisibility);
 
   function switchVisibility() {
       frame.classList.toggle('slide_maxHeight--none');
