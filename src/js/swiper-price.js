@@ -4,7 +4,7 @@
 
   export const swiperPrice = function() {
 
-    const newSwiper = document.querySelector('.slide--price');
+    const newSwiper = document.querySelector('.swiper-container--price');
 
   (function() {
     const breakpoint = window.matchMedia( '(min-width:768px)' );
