@@ -1,7 +1,7 @@
 .header__content {
   background-color: #FFFFFF;
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1366px) {
     background-color: inherit;
     display: flex;
     flex-direction: row-reverse;
@@ -127,7 +127,7 @@
   }
 }
 
-@media (max-width: 767px), (min-width: 1439px) {
+@media (max-width: 767px), (min-width: 1365px) {
   .nav__separation:first-of-type {
     display: none;
   }
