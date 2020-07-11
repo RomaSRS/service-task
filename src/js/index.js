@@ -9,6 +9,8 @@ import {showContentText} from './show-button-text';
 import {showContent} from './show-button';
 import {showContentTechnics} from './show-button-technics';
 
+import {showMenu} from './show-menu';
+
 
 
 
@@ -18,3 +20,4 @@ swiperPrice();
 showContentText();
 showContent();
 showContentTechnics();
+showMenu();
