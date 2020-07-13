@@ -400,6 +400,15 @@ template {
   .page-content {
     margin-left: 320px; } }
 
+@media (min-width: 320px) {
+  .page-content--overlay {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    opacity: 0.1;
+    z-index: 0; } }
+
 .header__content {
   background-color: #FFFFFF; }
   @media (min-width: 1366px) {
@@ -501,9 +510,8 @@ template {
       display: none; } }
 
 .nav-content__logo:hover {
-  cursor: pointer;
-  -webkit-animation: ease-out 2.4s flashing infinite;
-          animation: ease-out 2.4s flashing infinite; }
+  transform: scale(1.2);
+  transition: all 1s ease; }
 
 .nav__separation {
   margin: 0 20px 0 16.73px;
@@ -717,10 +725,10 @@ template {
   @media (min-width: 768px) {
     .subtitle__page {
       padding: 16px 24px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1366px) {
     .subtitle__page {
       padding: 16px 32px;
-      background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 15%, #FFFFFF 85%, #F8F8F8 100%); } }
+      background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%); } }
 
 .swiper-container {
   min-width: 320px;
@@ -1288,7 +1296,6 @@ template {
 .dropdown-menu {
   position: fixed;
   width: 100%;
-  height: 100vh;
   min-width: 340px;
   max-width: 420px;
   top: 0;
@@ -1307,19 +1314,13 @@ template {
       max-width: unset;
       transition: left 2s;
       z-index: 2; } }
-  @media (min-width: 1366px) {
-    .dropdown-menu {
-      display: flex;
-      left: 0;
-      box-shadow: none;
-      overflow-y: none;
-      transform: translateX(0); } }
 
-.dropdown-menu-size {
+.dropdown-menu--size {
   padding: 24px;
   display: flex; }
 
 .dropdown-menu--open {
+  height: 100%;
   left: 0;
   opacity: 1;
   transition: left 1s;
@@ -1327,10 +1328,19 @@ template {
   box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02); }
 
 .dropdown-menu--close {
+  height: 100%;
   left: -340px;
   opacity: 2;
   transition: left 2s;
   z-index: 10; }
+
+@media (min-width: 1366px) {
+  .dropdown-menu {
+    height: 100%;
+    display: flex;
+    left: 0;
+    box-shadow: none;
+    transform: translateX(0); } }
 
 .header-content {
   display: flex;
@@ -1352,7 +1362,7 @@ template {
 
 .link-btn:hover {
   cursor: pointer;
-  opacity: 0;
+  opacity: 1;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   transition: transform 1.5s ease-out; }
