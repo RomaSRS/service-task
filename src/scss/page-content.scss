@@ -3,3 +3,14 @@
     margin-left: 320px;
   }
 }
+
+.page-content--overlay {
+  @media (min-width: 320px) {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    opacity: 0.1;
+    z-index: 0;
+  }
+}

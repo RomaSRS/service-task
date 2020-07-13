@@ -113,8 +113,9 @@
 }
 
 .nav-content__logo:hover {
-  cursor: pointer;
-  animation: ease-out 2.4s flashing infinite;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 1s ease;
 }
 
 .nav__separation {
