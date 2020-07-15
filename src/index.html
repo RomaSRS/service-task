@@ -316,23 +316,39 @@
       </div>
     </footer>
   </div>
-  <div class="request-call--modal">
-    <button class="request-call__btn--close link-btn request-call__close">Close</button>
-    <div class="request-call__header">
-      <h2 class="request-call__title">Заказать звонок</h2>
+    <div class="page-modal request-call--modal">
+      <button class="request-call__btn--close link-btn">Close</button>
+      <div class="request-call__header">
+        <h2 class="request-call__title">Заказать звонок</h2>
+      </div>
+      <form class="form" action="">
+        <input class="input form__input" name="tel" type="tel" placeholder="Телефон" required>
+        <p class="form__warning">
+          Нажимая “отправить”, вы даете согласие на
+          <a href="#" class="form__link">обработку персональных данных</a>
+          и соглашаетесь с нашей
+          <a href="#" class="form__link">политикой конфиденциальности</a>
+        </p>
+        <button class="button-confirm form__button" type="submit">Отправить</button>
+      </form>
     </div>
-    <form class="form" action="">
-      <input class="input form__input" name="tel" type="tel" placeholder="Телефон" required>
-      <p class="form__warning">
-        Нажимая “отправить”, вы даете согласие на
-        <a href="#" class="form__link">обработку персональных данных</a>
-        и соглашаетесь с нашей
-        <a href="#" class="form__link">политикой конфиденциальности</a>
-      </p>
-      <button class="button-confirm form__button" type="submit">Отправить</button>
-    </form>
-  </div>
-
+    <div class="page-modal feedback--modal">
+      <div class="feedback__header">
+        <button class="feedback__btn--close link-btn">Close</button>
+        <h2 class="feedback__title">Обратная связь</h2>
+      </div>
+      <form class="form" action="">
+        <input class="input form__input" name="name" type="text" placeholder="Имя" required>
+        <input class="input form__input" name="tel" type="tel" placeholder="Телефон" required>
+        <input class="input form__input" name="email" type="email" placeholder="Электронная почта" required>
+        <textarea class="form__textarea" name="message"  placeholder="Сообщение" required></textarea>
+        <p class="form__warning">
+          Нажимая “отправить”, вы даете согласие на <a href="#" class="form__link">обработку персональных данных</a>
+          и соглашаетесь с нашей <a href="#" class="form__link">политикой конфиденциальности</a>
+        </p>
+        <button type="submit" class="button-confirm form__button">Отправить</button>
+      </form>
+    </div>
 
 </body>
 </html>
