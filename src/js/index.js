@@ -10,6 +10,7 @@ import {showContent} from './show-button';
 import {showContentTechnics} from './show-button-technics';
 
 import {showMenu} from './show-menu';
+import {showModalRequestCall} from './show-modal-request-call';
 
 
 
@@ -21,3 +22,4 @@ showContentText();
 showContent();
 showContentTechnics();
 showMenu();
+showModalRequestCall();

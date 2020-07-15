@@ -21,11 +21,10 @@ export function showMenu() {
 
   page.addEventListener('click', function (e) {
     if (!btnCloseMenu.contains(e.target) && !btnShow.contains(e.target)) {
-        page.classList.remove('page-content--overlay');
-        btnOpenMenu.classList.remove('dropdown-menu--open');
-        btnOpenMenu.classList.add('dropdown-menu--close');
-        console.log('shit');
+      page.classList.remove('page-content--overlay');
+      btnOpenMenu.classList.remove('dropdown-menu--open');
+      btnOpenMenu.classList.add('dropdown-menu--close');
+      console.log('shit');
     }
-});
-
+  });
 }
