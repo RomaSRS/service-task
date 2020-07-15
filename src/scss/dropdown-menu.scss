@@ -1,13 +1,13 @@
 .dropdown-menu {
   position: fixed;
   width: 100%;
-  min-width: 340px;
+  min-width: 320px;
   max-width: 420px;
   top: 0;
+  padding: 24px 16px 24px 16px;
   box-sizing: border-box;
   background: #FFFFFF;
   flex-direction: column;
-  left: -320px;
   z-index: 20;
   box-sizing: border-box;
   overflow-y: auto;
@@ -16,6 +16,16 @@
   @media (min-width: 320px) {
     width: 320px;
     left: -340px;
+    max-width: unset;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    transition: left 2s;
+    z-index: 2;
+  }
+
+  @media (min-width: 360px) {
+    width: 360px;
+    left: -365px;
     max-width: unset;
     -webkit-transition: left 2s;
     -moz-transition: left 2s;
@@ -43,7 +53,7 @@
 
 .dropdown-menu--close {
   height: 100%;
-  left: -340px;
+  left: -360px;
   opacity: 2;
   -webkit-transition: left 2s;
   -moz-transition: left 2s;
