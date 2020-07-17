@@ -96,6 +96,50 @@
   }
 }
 
+.request-call--open {
+  height: 100%;
+  right: 0;
+  opacity: 1;
+  -webkit-transition: right 2s;
+  -moz-transition: right 2s;
+  transition: right 2s;
+  z-index: 3;
+  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
+              -2px 0px 4px rgba(69, 79, 126, 0.02);
+}
+
+.request-call__close {
+  height: 100%;
+  right: -360px;
+  opacity: 2;
+  -webkit-transition: right 2s;
+  -moz-transition: right 2s;
+  transition: right 2s;
+  z-index: 10;
+
+  @media (min-width: 768px) {
+    height: 100%;
+    right: -390px;
+    max-width: unset;
+    -webkit-transition: right 2s;
+    -moz-transition: right 2s;
+    transition: right 2s;
+    opacity: 0.9;
+    z-index: 2;
+  }
+
+  @media (min-width: 1366px) {
+    height: 100%;
+    right: -520px;
+    max-width: unset;
+    -webkit-transition: right 2s;
+    -moz-transition: right 2s;
+    transition: right 2s;
+    opacity: 0.9;
+    z-index: 2;
+  }
+}
+
 .request-call__header {
   font-size: 24px;
   line-height: 32px;
