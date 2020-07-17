@@ -11,11 +11,6 @@ import {showContentTechnics} from './show-button-technics';
 
 import {showMenu} from './show-menu';
 import {showModalRequestCall} from './show-modal-request-call';
-<<<<<<< HEAD
-import {showModalFeedback} from './show-modal-feedback';
-=======
-
->>>>>>> 4f8f11c39ea587c47d7cf7a0de7fc0ffcfb00bba
 
 
 
@@ -27,7 +22,4 @@ showContent();
 showContentTechnics();
 showMenu();
 showModalRequestCall();
-<<<<<<< HEAD
 showModalFeedback();
-=======
->>>>>>> 4f8f11c39ea587c47d7cf7a0de7fc0ffcfb00bba
