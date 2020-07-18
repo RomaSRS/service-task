@@ -11,6 +11,7 @@ import {showContentTechnics} from './show-button-technics';
 
 import {showMenu} from './show-menu';
 import {showModalRequestCall} from './show-modal-request-call';
+import {showModalFeedback} from './show-modal-feedback';
 
 
 
