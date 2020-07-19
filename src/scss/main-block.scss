@@ -18,17 +18,17 @@
   flex-shrink: 0;
   font-size: 16px;
   letter-spacing: -0.2px;
-  color: #7E7E82;
+  color: $text-color-secondary;
   padding: 8px 16px;
   margin: 0;
   border: 2px solid transparent;
   border-radius: 6px;
-}
 
-.menu__menu-item:hover {
-  border-color: #BDFFEC;
-  color: inherit;
-  background: #FFF;
+    &:hover {
+    border-color: #BDFFEC;
+    color: inherit;
+    background: $background-title;
+  }
 }
 
 .menu-link {
@@ -51,27 +51,27 @@
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
-}
 
-.article__article-wrapper {
-  margin: 24px 16px 16px;
-  max-height: 90px;
-  overflow: hidden;
+  &__article-wrapper {
+    margin: 24px 16px 16px;
+    max-height: 90px;
+    overflow: hidden;
 
-  @media (min-width: 768px) {
-    max-height: 142px;
-    max-width: 312px;
-    margin: 0 24px;
-  }
+    @media (min-width: 768px) {
+      max-height: 142px;
+      max-width: 312px;
+      margin: 0 24px;
+    }
 
-  @media (min-width: 1440px) {
-    max-width: 490px;
-    max-height: 159px;
+    @media (min-width: 1440px) {
+      max-width: 490px;
+      max-height: 159px;
+    }
   }
 }
 
 .shown-block {
-    max-height: none;
+  max-height: none;
 }
 
 .article__paragraph {
@@ -96,35 +96,37 @@
   cursor: pointer;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
-}
 
-.expand-btn--text::before {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 4px;
-  left: 4px;
-  background: url(../img/expand.svg) 50% no-repeat;
-  transition: all 0.5s ease-in-out;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 4px;
+    left: 4px;
+    background: url(../img/expand.svg) 50% no-repeat;
+    transition: all 0.5s ease-in-out;
+  }
 
-.expand-btn--text:hover::before {
-  transform: rotate(180deg) scale(1.5);
-}
+  &:hover::before {
+    transform: rotate(180deg) scale(1.5);
+  }
 
-.expand-btn--text:hover {
-  background-color: #FFFFFF;
-  border: 2px solid #41F6D7;
-}
+  &:hover {
+    background-color: $background-title;
+    border: 2px solid $btn-border-color;
+  }
 
-.expand-btn--text:focus {
-  border: 2px solid #41F6D7;
-}
+  &:focus {
+    border: 2px solid $btn-border-color;
+  }
 
-.expand-btn--text:active {
-  background-color: #EEEEEE;
-  border: 2px solid #41F6D7;
+  &:active {
+    background-color: #EEEEEE;
+    border: 2px solid $btn-border-color;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 .main-block__image-wrapper {

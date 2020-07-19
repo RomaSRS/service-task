@@ -1,6 +1,4 @@
 
-'use strict';
-
 export function showContent() {
 
   const btn = document.querySelector('.expand-btn');

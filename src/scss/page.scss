@@ -5,15 +5,16 @@
   padding: 0;
   margin: auto;
   font-family: 'TT Lakes', sans-sefir;
-  background-color: #F8F8F8;
-  color: #1B1C21;
+  background-color: $background-main;
+  color: $text-color-main;
 
   @media (min-width: 768px) {
     min-width: 768px;
   }
 
   @media (min-width: 1366px) {
-    margin-left: 32px;
+    display: flex;
+    flex-direction: row-reverse;
     max-width: 1920px;
   }
 

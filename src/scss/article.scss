@@ -2,8 +2,8 @@
   padding: 0;
   margin: auto;
   font-family: 'TT Lakes', sans-sefir;
-  background-color: #F8F8F8;
-  color: #1B1C21;
+  background-color: $background-main;
+  color: $text-color-main;
   position: relative;
   min-width: 320px;
   max-width: 1920px;
@@ -11,27 +11,27 @@
 }
 
 .subtitle {
-  background-color: #FFF;
+  background-color: $background-title;
   box-sizing: border-box;
-}
 
-.subtitle__page {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  text-transform: uppercase;
-  color: #7E7E82;
-  margin: 0;
-  padding: 16px;
+  &__page {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: $text-color-secondary;
+    margin: 0;
+    padding: 16px;
 
-  @media (min-width: 768px) {
-    padding: 16px 24px;
-  }
+    @media (min-width: 768px) {
+      padding: 16px 24px;
+    }
 
-  @media (min-width: 1366px) {
-    padding: 16px 32px;
-    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    @media (min-width: 1366px) {
+      padding: 16px 32px;
+      background: linear-gradient(270deg, $background-main 0%, $background-title 98.61%);
+    }
   }
 }
 
@@ -64,8 +64,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  background: #FFFFFF;
-  border: 1px solid #EAEAEA;
+  background: $background-title;
+  border: 1px solid $border-color;
   border-radius: 6px;
   transition: 0.3s;
 
@@ -74,16 +74,17 @@
     margin: 0 0 16px 24px;
   }
 
-
   @media (min-width: 1440px) {
     width: 240px;
     margin: 0 0 16px 32px;
   }
-}
 
-.swiper-slide__item:hover {
-  cursor: pointer;
-  box-shadow: inset 0 0 20px 3px rgba(127,127,127,0.5);
+  &:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 20px 3px $btn-halo;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 .swiper-slide__link {
@@ -98,20 +99,20 @@
   background: url(../img/transition.svg);
   cursor: pointer;
   transition: 0.3s;
-}
 
- .swiper-slide__link:hover {
-  filter: drop-shadow(0 0 1px rgba(127,127,127,0.6));
-  transition: all 0.3s;
-  -webkit-tap-highlight-color: transparent;
-  box-shadow: 0 0 0 2px #FF3E79;
-    -webkit-animation: si-button-pulse 0.8s 0s ease-out 1;
-    -moz-animation: si-button-pulse 0.8s 0s ease-out 1;
-    animation: si-button-pulse 0.8s 0s ease-out 1;
+  &:hover {
+    filter: drop-shadow(0 0 1px $btn-halo);
+    transition: all 0.3s;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: 0 0 0 2px $btn-box-shadow;
+      -webkit-animation: si-button-pulse 0.8s 0s ease-out 1;
+      -moz-animation: si-button-pulse 0.8s 0s ease-out 1;
+      animation: si-button-pulse 0.8s 0s ease-out 1;
+  }
 }
 
 @keyframes si-button-pulse {
-  from {box-shadow: 0 0 4px 3px #FF3E79, 0 0 6px 7px #FF3E79;}
+  from {box-shadow: 0 0 4px 3px $btn-box-shadow, 0 0 6px 7px $btn-box-shadow;}
   to {box-shadow: 0 0 5px 2px rgba(255, 48, 26, 0), 0 0 5px 5px rgba(255, 48, 26, 0);}
 }
 
@@ -145,36 +146,36 @@
   @media (max-width: 767px) {
     display: none;
   }
-}
 
-.expand-btn::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  top: 4px;
-  left: 4px;
-  background: url("../img/expand.svg") 50% no-repeat;
-  transition: all 0.5s ease-in-out;
-}
+    &::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    top: 4px;
+    left: 4px;
+    background: url("../img/expand.svg") 50% no-repeat;
+    transition: all 0.5s ease-in-out;
+  }
 
-.expand-btn:hover::before {
-  transform: rotate(180deg) scale(1.5);
-}
+  &:hover::before {
+    transform: rotate(180deg) scale(1.5);
+  }
 
-.expand-btn:hover {
-  background-color: #FFFFFF;
-  border: 2px solid #41F6D7;
-}
+  &:hover {
+    background-color: $background-title;
+    border: 2px solid $btn-border-color;
+  }
 
-.expand-btn:focus {
-  border: 2px solid #41F6D7;
-}
+  &:focus {
+    border: 2px solid $btn-border-color;
+  }
 
-.expand-btn:active {
-  background-color: #EEEEEE;
-  border: 2px solid #41F6D7;
+  &:active {
+    background-color: $background-title;
+    border: 2px solid $btn-border-color;
+  }
 }
 
 @media (min-width: 768px) {

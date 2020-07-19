@@ -24,7 +24,6 @@ export function showMenu() {
       page.classList.remove('page-content--overlay');
       btnOpenMenu.classList.remove('dropdown-menu--open');
       btnOpenMenu.classList.add('dropdown-menu--close');
-      console.log('shit');
     }
   });
 }

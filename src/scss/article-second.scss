@@ -18,7 +18,7 @@
   justify-content: space-between;
   font-size: 14px;
   line-height: 16px;
-  color: #7E7E82;
+  color: $text-color-secondary;
   opacity: 0.72;
   margin: 16px;
 
@@ -29,41 +29,41 @@
   @media (min-width: 1120px) {
     margin: 16px 24px;
   }
-}
 
-.swiper-container__header--price {
-  display: grid;
-  grid-template-columns: 50% 15% 15% 125px;
-  justify-content: space-between;
-  font-size: 14px;
-  line-height: 16px;
-  color: #7E7E82;
-  opacity: 0.72;
-  margin: 0;
-  padding: 16px 0;
-
-  @media (min-width: 768px) {
-    width: auto;
-    height: auto;
+  &--price {
     display: grid;
     grid-template-columns: 50% 15% 15% 125px;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-color-secondary;
+    opacity: 0.72;
     margin: 0;
-    padding: 0;
-    align-items: center;
-    border: none;
-    border-radius: unset;
+    padding: 16px 0;
+
+    @media (min-width: 768px) {
+      width: auto;
+      height: auto;
+      display: grid;
+      grid-template-columns: 50% 15% 15% 125px;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      border: none;
+      border-radius: unset;
     }
 
-  @media (min-width: 1120px) {
-    margin: 0;
-    padding: 0;
+    @media (min-width: 1120px) {
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 
 .swiper-price__wrapper {
   @media (min-width: 768px) {
     flex-direction: column;
-    background: #FFFFFF;
+    background: $background-title;
     border-radius: 6px;
   }
 }
@@ -77,8 +77,8 @@
   justify-content: space-between;
   position: relative;
   padding: 16px;
-  background: #FFFFFF;
-  border: 1px solid #EAEAEA;
+  background: $background-title;
+  border: 1px solid $border-color;
   border-radius: 6px;
   transition: 0.3s;
 
@@ -91,13 +91,24 @@
     padding: 16px 0;
     align-items: center;
     border: none;
-    border-bottom: 1px solid #EAEAEA;
+    border-bottom: 1px solid $border-color;
     border-radius: unset;
   }
 
   @media (min-width: 1120px) {
     margin: 0 24px;
     padding: 24px 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 20px 3px $btn-halo;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+
+    @media (min-width: 768px) {
+      box-shadow: none;
+    }
   }
 }
 
@@ -108,55 +119,55 @@
   @media (min-width: 768px) {
     margin-top: 0;
   }
-}
 
-.swiper-slide__name::before {
-  content: 'Ремонтные услуги';
-  line-height: 16px;
-  color: #7E7E82;
-  opacity: 0.72;
-  position: absolute;
-  top: -16px;
-  white-space: nowrap;
+  &::before {
+    content: 'Ремонтные услуги';
+    line-height: 16px;
+    color: $text-color-secondary;
+    opacity: 0.72;
+    position: absolute;
+    top: -16px;
+    white-space: nowrap;
 
-  @media (min-width: 768px) {
-    display: none;
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }
 
 .swiper-slide__value {
   position: relative;
-}
 
-.swiper-slide__value::before {
-  content: 'Цена';
-  line-height: 16px;
-  color: #7E7E82;
-  opacity: 0.72;
-  position: absolute;
-  top: -16px;
-  white-space: nowrap;
+  &::before {
+    content: 'Цена';
+    line-height: 16px;
+    color: $text-color-secondary;
+    opacity: 0.72;
+    position: absolute;
+    top: -16px;
+    white-space: nowrap;
 
-  @media (min-width: 768px) {
-    display: none;
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }
 
 .swiper-slide__time {
   position: relative;
-}
 
-.swiper-slide__time::before {
-  content: 'Срок';
-  line-height: 16px;
-  color: #7E7E82;
-  opacity: 0.72;
-  position: absolute;
-  top: -16px;
-  white-space: nowrap;
+  &::before {
+    content: 'Срок';
+    line-height: 16px;
+    color: $text-color-secondary;
+    opacity: 0.72;
+    position: absolute;
+    top: -16px;
+    white-space: nowrap;
 
-  @media (min-width: 768px) {
-    display: none;
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -179,8 +190,8 @@
   line-height: 24px;
   letter-spacing: -0.15px;
   text-transform: uppercase;
-  color: #FFFFFF;
-  background: #FF3E79;
+  color: $background-title;
+  background: $btn-box-shadow;
   border-radius: 16px;
   height: 32px;
   padding: 4px 40px 4px 12px;
@@ -188,26 +199,26 @@
   transition: 0.3s;
   outline: none;
   -webkit-tap-highlight-color: transparent;
-}
 
-.button-confirm::after {
-  content: url(../img/dropdown.svg);
-  position: relative;
-  left: 16px;
-}
+  &::after {
+    content: url(../img/dropdown.svg);
+    position: relative;
+    left: 16px;
+  }
 
-.button-confirm:focus {
-  filter: drop-shadow(0 0 1px rgba(127,127,127,0.6));
-  transition: all 0.3s;
-  -webkit-tap-highlight-color: transparent;
-  box-shadow: 0 0 0 2px #FF3E79;
-    -webkit-animation: si-button-pulse 0.8s 0s ease-out 1;
-    -moz-animation: si-button-pulse 0.8s 0s ease-out 1;
-    animation: si-button-pulse 0.8s 0s ease-out 1;
+  &:focus {
+    filter: drop-shadow(0 0 1px $btn-halo);
+    transition: all 0.3s;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: 0 0 0 2px $btn-box-shadow;
+      -webkit-animation: si-button-pulse 0.8s 0s ease-out 1;
+      -moz-animation: si-button-pulse 0.8s 0s ease-out 1;
+      animation: si-button-pulse 0.8s 0s ease-out 1;
+  }
 }
 
 @keyframes si-button-pulse {
-  from {box-shadow: 0 0 4px 3px #FF3E79, 0 0 6px 7px #FF3E79;}
+  from {box-shadow: 0 0 4px 3px $btn-box-shadow, 0 0 6px 7px $btn-box-shadow;}
   to {box-shadow: 0 0 5px 2px rgba(255, 48, 26, 0), 0 0 5px 5px rgba(255, 48, 26, 0);}
 }
 

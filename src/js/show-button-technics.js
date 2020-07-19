@@ -1,6 +1,4 @@
 
-'use strict';
-
 export function showContentTechnics() {
 
   const btn = document.querySelector('.expand-btn--technics');
