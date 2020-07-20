@@ -198,5 +198,9 @@
   position: absolute;
   left: 0px;
   color: $btn-border-color;
-  top: 123px;
+
+  @media (min-width: 1366px) {
+    top: 60px;
+    left: 362px;
+  }
 }
