@@ -9,14 +9,12 @@ export function showMenu() {
     btnOpenMenu.classList.add('dropdown-menu--open');
     btnOpenMenu.classList.remove('dropdown-menu--close');
     page.classList.add('page-content--overlay');
-    console.log('fuck');
   });
 
   btnCloseMenu.addEventListener('click', function() {
     btnOpenMenu.classList.remove('dropdown-menu--open');
     btnOpenMenu.classList.add('dropdown-menu--close');
     page.classList.remove('page-content--overlay');
-    console.log('fuck off');
   });
 
   page.addEventListener('click', function (e) {
