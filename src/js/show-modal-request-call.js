@@ -13,7 +13,7 @@ export function showModalRequestCall() {
     if (btnShowModalRequestCall.contains(e.target) || btnOpenModalRequestCallHed.contains(e.target)) {
       btnOpenModalRequestCall.classList.add('request-call--open');
       btnOpenModalRequestCall.classList.remove('request-call__close');
-      btnOpenModalFeedback.classList.add('feedback__close');
+      btnOpenModalFeedback.classList.remove('feedback--open');
       btnOpenMenu.classList.remove('dropdown-menu--open');
       page.classList.add('page-content--overlay');
       }

@@ -38,15 +38,6 @@
   outline: none;
   -webkit-tap-highlight-color: transparent;
 
-  @media (min-width: 1366px) {
-      width: auto;
-      font-family: inherit;
-      font-weight: 500;
-      font-size: 16px;
-      background-position: 100%;
-      background-repeat: no-repeat;
-    }
-
   &:focus {
     filter: drop-shadow(0 0 1px $btn-halo);
     transition: all 0.3s;
@@ -72,6 +63,36 @@
   height: 40px;
   width: 40px;
   margin-right: 16px;
+}
+
+.link-btn__text--position {
+  display: inline-block;
+  font-size: 0px;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+
+  @media (min-width: 1366px) {
+    width: auto;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+  }
+
+  &:focus {
+    filter: drop-shadow(0 0 1px $btn-halo);
+    transition: all 0.3s;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: 0 0 0 2px $btn-box-shadow;
+      -webkit-animation: si-button-pulse 0.8s 0s ease-out 1;
+      -moz-animation: si-button-pulse 0.8s 0s ease-out 1;
+      animation: si-button-pulse 0.8s 0s ease-out 1;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .nav-btn__burger {
@@ -109,10 +130,14 @@
 
 .nav-btn__repair {
   background: url(../img/repair.svg);
+  background-repeat: no-repeat;
+  background-position: 100%;
 }
 
 .nav-btn__check-status {
   background: url(../img/checkstatus.svg);
+  background-repeat: no-repeat;
+  background-position: 100%;
 }
 
 .nav-content__logo {
