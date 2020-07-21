@@ -9,7 +9,7 @@
   }
 }
 
-.menu__navigation {
+.menu--navigation {
   padding: 0;
   margin: 0 16px;
 }
@@ -51,22 +51,22 @@
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
+}
 
-  &__article-wrapper {
-    margin: 24px 16px 16px;
-    max-height: 90px;
-    overflow: hidden;
+.article__article-wrapper {
+  margin: 24px 16px 16px;
+  max-height: 90px;
+  overflow: hidden;
 
-    @media (min-width: 768px) {
-      max-height: 142px;
-      max-width: 312px;
-      margin: 0 24px;
-    }
+  @media (min-width: 768px) {
+    max-height: 142px;
+    max-width: 312px;
+    margin: 0 24px;
+  }
 
-    @media (min-width: 1440px) {
-      max-width: 490px;
-      max-height: 159px;
-    }
+  @media (min-width: 1440px) {
+    max-width: 490px;
+    max-height: 159px;
   }
 }
 

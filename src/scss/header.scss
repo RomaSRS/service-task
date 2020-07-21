@@ -14,22 +14,23 @@
   display: flex;
   justify-content: stretch;
   align-items: center;
+}
 
-  &__nav-content_size {
-    height: 88px;
-    border-bottom: 1px solid #D9FFF5;
+.nav__nav-content_size {
+  height: 88px;
+  border-bottom: 1px solid #D9FFF5;
 
-    @media (min-width: 768px) {
-      margin: 0 8px;
-    }
+  @media (min-width: 768px) {
+    margin: 0 8px;
+  }
 
-    @media (min-width: 1366px) {
-      height: 80px;
-      align-items: flex-end;
-      border: none;
-    }
+  @media (min-width: 1366px) {
+    height: 80px;
+    align-items: flex-end;
+    border: none;
   }
 }
+
 
 .link-btn {
   display: inline-block;

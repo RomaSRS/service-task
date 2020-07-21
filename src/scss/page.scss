@@ -16,8 +16,9 @@
     display: flex;
     max-width: 1920px;
   }
-
-  &__size {
-    min-width: 320px;
-  }
 }
+
+.page__size {
+  min-width: 320px;
+}
+

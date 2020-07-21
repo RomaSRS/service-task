@@ -29,34 +29,34 @@
   @media (min-width: 1120px) {
     margin: 16px 24px;
   }
+}
 
-  &--price {
+.swiper-container__header--price {
+  display: grid;
+  grid-template-columns: 50% 15% 15% 125px;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-color-secondary;
+  opacity: 0.72;
+  margin: 0;
+  padding: 16px 0;
+
+  @media (min-width: 768px) {
+    width: auto;
+    height: auto;
     display: grid;
     grid-template-columns: 50% 15% 15% 125px;
-    justify-content: space-between;
-    font-size: 14px;
-    line-height: 16px;
-    color: $text-color-secondary;
-    opacity: 0.72;
     margin: 0;
-    padding: 16px 0;
+    padding: 0;
+    align-items: center;
+    border: none;
+    border-radius: unset;
+  }
 
-    @media (min-width: 768px) {
-      width: auto;
-      height: auto;
-      display: grid;
-      grid-template-columns: 50% 15% 15% 125px;
-      margin: 0;
-      padding: 0;
-      align-items: center;
-      border: none;
-      border-radius: unset;
-    }
-
-    @media (min-width: 1120px) {
-      margin: 0;
-      padding: 0;
-    }
+  @media (min-width: 1120px) {
+    margin: 0;
+    padding: 0;
   }
 }
 
